@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerardo Díaz</title>
+
+    <style>
+    html, body{
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header{
+        padding: 20px;
+        background-color: #100662;
+    }
+
+    h1{
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #7126bb,
+            0 0 40px #7126bb,
+            0 0 80px #7126bb,
+            0 0 120px #7126bb;
+    }
+
+    main{
+        flex: 1;
+        padding: 20px;
+        width:95%;
+        margin: 0 auto;
+    }
+
+    .semana{
+        background-color: #f3f0ff;
+        color: #333;
+        border-radius: 15px;
+        padding: 40px;
+        margin: 30px auto;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 4px 15px rgba(113, 38, 187, 0.2);
+        border-left: 5px solid #7126bb;
+        text-align: left;
+        transition: transform 0.3s ease;
+    }
+
+    .semana:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(113, 38, 187, 0.3);
+    }
+
+    .semana h2{
+        margin-top: 0;
+        color: #7126bb;
+        font-size: 1.5rem;
+    }
+
+    .semana p{
+        line-height: 1.6;
+        color: #555;
+    }
+
+    footer{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        border-top: 1px solid #7126bb;
+        background-color:#100662;
+        color: white;
+    }
+
+    footer img{
+        transition: all .3s ease;
+    }
+
+    footer img:hover{
+        transform: scale(1.2);
+    }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bitácora Segunda y Tercera Unidad</h1> 
+</header>
+
+<main>
+
+    <!-- SEMANA 1 -->
+    <div class="semana">
+        <h2>Semana 1: Introducción</h2>
+
+        <p>Documento completo:</p>
+
+        <iframe src="recursos/pdf/Introducción Arduino Gerardo.pdf"
+            width="100%" height="500px"
+            style="border: none; border-radius: 8px;">
+        </iframe>
+    </div>
+
+    <!-- SEMANA 2 -->
+    <div class="semana">
+        <h2>Semana 2: Primer Circuito</h2>
+
+        <p>Lista de materiales:</p>
+
+        <ul style="color: #555; line-height: 1.8;">
+            <li>Protoboard</li>
+            <li>LED</li>
+            <li>Resistencias</li>
+            <li>Arduino UNO</li>
+        </ul>
+
+        <p style="font-weight: bold; color: #7126bb;">Esquema del circuito:</p>
+
+        <div style="text-align: left;">
+            <img src="recursos/img/circuito.png"
+                alt="Circuito"
+                style="width: 100%; max-width: 500px; height: auto;
+                border-radius: 10px; border: 2px solid #7126bb;">
+        </div>
+    </div>
+
+    <!-- SEMANA 3 -->
+    <div class="semana">
+        <h2>Semana 3: Video del circuito</h2>
+
+        <p>Se completó el circuito y se programó para que la LED RGB se encendiera en los 3 colores (rojo, azul y verde)..</p>
+
+        <div style="margin-top: 20px;">
+            <video width="100%" style="border-radius: 10px; border: 2px solid #7126bb;" controls>
+                <source src="recursos/video/Video circuito Gerardo Diaz.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <span>@Gejadime</span>
+
+    <img src="https://www.capouilliez.edu.gt/assets/img/logo.png"
+        height="50"
+        width="200">
+</footer>
+
+</body>
+</html>
